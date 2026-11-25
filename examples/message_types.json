@@ -1,0 +1,11 @@
+[
+  "ack",
+  "claim",
+  "close",
+  "inspect",
+  "load",
+  "pull",
+  "seal",
+  "shift",
+  "weigh"
+]

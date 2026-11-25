@@ -1,0 +1,13 @@
+{"at":0,"kind":"shift","record":{"shift":"D","starts":0,"ends":10,"pads":{"A":["vehicle","scale"],"B":["vehicle","scale"]},"required_weight":10}}
+{"at":1,"kind":"load","record":{"source":"vehicle","seq":1,"rev":1,"trip":"t1","observed_at":1,"pad":"A","lane":"A"}}
+{"at":3,"kind":"load","record":{"source":"vehicle","seq":1,"rev":1,"trip":"t2","observed_at":3,"pad":"B","lane":"B"}}
+{"at":4,"kind":"weigh","record":{"source":"scale","seq":1,"rev":1,"trip":"t2","kg":5,"lane":"B"}}
+{"at":10,"kind":"close","record":{"shift":"D"}}
+{"at":10,"kind":"seal","record":{"shift":"D","pad":"B","source":"vehicle","last_seq":1,"gaps":[]}}
+{"at":10,"kind":"seal","record":{"shift":"D","pad":"B","source":"scale","last_seq":1,"gaps":[]}}
+{"at":11,"kind":"pull","record":{"client":"schedule","shift":"D","pad":"B"}}
+{"at":12,"kind":"seal","record":{"shift":"D","pad":"A","source":"vehicle","last_seq":1,"gaps":[]}}
+{"at":12,"kind":"seal","record":{"shift":"D","pad":"A","source":"scale","last_seq":1,"gaps":[]}}
+{"at":13,"kind":"inspect","record":{"shift":"D"}}
+{"at":14,"kind":"weigh","record":{"source":"scale","seq":1,"rev":1,"trip":"t1","kg":13,"lane":"A"}}
+{"at":15,"kind":"inspect","record":{"shift":"D"}}
